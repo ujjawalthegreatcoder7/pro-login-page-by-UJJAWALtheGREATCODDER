@@ -1,0 +1,276 @@
+*{
+    margin : 0 ;
+    padding : 0 0 0 0 ;
+    font-family :Verdana, Geneva, Tahoma, sans-serif ;
+    }
+    
+    body {
+    background-image : url("https://img.freepik.com/premium-photo/pink-peony-flower-background-bright-color-generative-ai_779468-14826.jpg") ;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    display:flex ;
+    justify-content : center ;
+    align-items : center ;
+    min-height : 100vh ;
+    }
+    
+    header {
+    position : fixed ;
+    top : 0 ;
+    left : 0 ;
+    width : 100% ;
+    padding : 10px 50px ;
+    display : flex ;
+    justify-content : space-between ;
+    align-items: center ;
+    z-index:99 ;
+    
+    }
+    
+    .logo {
+        font-size : 2em ;
+        color :burlywood;
+    }
+    .navigation a {
+    position : relative ;
+    font-size : 1.1em ;
+    text-decoration: none ;
+    margin-left : 30px ;
+    color : black ;
+    }
+    
+    .navigation .btnlogin-popup {
+        width : 130px ;
+        height : 50px ;
+        background: transparent ;
+        color : white ;
+        border : 2px solid white ;
+        outline:none ;
+        border-radius : 6px ;
+        cursor : pointer;
+        font-size : 1.1rem ;
+        font-weight : 500px ;
+        margin-left : 40px ;
+        margin-right :100px ;
+    }
+    .btnlogin-popup:hover{
+    background-color: white;
+    color : black ;    
+    box-shadow: 3px 5px 8px yellow ;
+    transition:1s ;
+    }
+    
+    .input-box input:focus~label,
+    .input-box input:valid~label {
+        top:-1px;
+        transition:1s;
+    }
+
+    .wrapper{
+        border-top-right-radius : 10px ;
+        border-bottom-left-radius : 10px ;
+        border-top-left-radius : 200px ;
+        border-bottom-right-radius : 100px ;
+    } 
+    
+    a:hover{
+        background-color: white ;
+        color : black ;
+        box-shadow: 3px 5px 8px yellow ;
+        transition : 1s ;
+        }
+    
+        .navigation a::after {
+              content : 'Welcome' ;
+               position : absolute ;
+            width : 100% ;
+            height : 3px ;
+            background-color :burlywood;
+            left : 0 ;
+            bottom : -7px ;
+            transform-origin : right  ;   
+            transform : scaleX(0) ;
+            transition : transform .5s ;
+         }
+    
+         .navigation a:hover::after {
+            transform : scaleX(1) ;
+            transform-origin: left ;
+         }
+    
+    .wrapper{
+        position : relative ;
+        width : 400px ;
+        height : 440px ;
+        background: transparent ;
+        box-shadow: 0px 0px 100px 0px rgb(255, 242, 0);
+        backdrop-filter: blur(10px);
+        border : 1px solid white ;
+        display: flex ;
+    justify-content: center ;
+    }
+    
+    
+    .wrapper .form-box {
+        width : 100% ;
+        padding : 0 40px ;
+    }
+    
+    .form-box h2 {
+    text-shadow: 0 0  10px yellow ,0px 0 12px white;
+    font-size : 3.5em ;
+    color : #10193f ;
+    text-align: center ;
+    margin-top : 30px ;
+    margin-bottom : 50px;
+    }
+    
+    
+    
+    .login h2::after{
+        content : 'Welcome' ;
+        font-size : 1rem ;
+        position : absolute ;
+     width : 100% ;
+     height : 3px ;
+     background-color :burlywood;
+     left : 0 ;
+     top : 115px ;
+     transform-origin : right  ;   
+     transform : scaleX(0) ;
+     transition : transform .5s ;
+    }
+    
+    .form-box  h2:hover::after{
+        transform : scaleX(1) ;
+            transform-origin: left ;
+    }
+    
+    .input-box {
+    position : relative ;
+    width: 100% ;
+    height : 50px ;
+    border-bottom : 2px solid #0c132e ;
+    }
+    
+    .input-box label {
+        position : absolute ;
+        top: 50% ;
+        left : 5px ;
+        transform : translateY(-50%) ;
+        font-size : 1em ;
+        font-weight : 500 ;
+        pointer-events:none;
+    }
+    .input-box input {
+        width : 100% ;
+        height : 100% ;
+        background: transparent ;
+        border : none ;
+        outline:none l
+    }
+    .input-box .icon {
+    position : absolute ;
+    right : 5px ;
+    top: 15px;
+    font-size : 20px;
+    color : #101732 ;
+    }
+    .remember-forget{
+        margin-top : 40px;
+    }
+    
+    .remember-forget{
+        font-size : .9rem ;
+        color: #101732 ;
+        font-weight : 500 ;
+        display : flex ;
+        justify-content: space-between;
+    }
+    
+    .remember-forget label input {
+        accent-color : #162938 ;
+        margin-right : 3px;
+    }
+    
+    .remember-forget a {
+        color :  #162938  ;
+        text-decoration: none;
+    }
+    .remember-forget a::after {
+    content : '' ;
+    position : absolute ;
+    width : 130px  ;
+    height : 3px ;
+    background-color: white ;
+    right : 44px ;
+    bottom: 120px;
+    transform-origin : right  ;   
+    transform : scaleX(0) ;
+    transition : transform .5s ;
+    }
+    
+    .remember-forget a:hover::after {
+        transform : scaleX(1) ;
+        transform-origin: left ;
+    }
+    
+    .btn {
+        width : 100% ;
+        height : 45px ;
+        background: #233f54 ;
+        outline : none ;
+        border : none ; 
+        cursor : pointer ;
+        margin-top: 30px ;
+    }
+    
+    .login-register{
+        display : flex ;
+        justify-content :space-evenly ;
+        margin-top : 20px ;
+        color : white;
+    }
+
+    .register-link{
+        color : white ;
+    }
+    .register-link::after{
+        text-decoration : none ;
+        content : '' ;
+    position : absolute ;
+    width : 130px  ;
+    height : 3px ;
+    background-color: white ;
+    right : 44px ;
+    bottom: 10px;
+    transform-origin : right  ;   
+    transform : scaleX(0) ;
+    transition : transform .5s ;
+    }
+
+    .register-link:hover::after{
+        transform : scaleX(1) ;
+        transform-origin: left ;
+    }
+
+    .form-box{
+        border-radius :20px ;
+    }
+
+    @media only screen and (max-width : 800px){
+
+ .navigation a{
+color : black ;
+font-family: fantasy;
+font-size : 20px ;
+width : 100px ;
+top : 15px ;
+}
+
+.navigation .btnlogin-popup{
+display : none ;
+}
+
+
+    }
